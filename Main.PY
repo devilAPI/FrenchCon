@@ -27,7 +27,7 @@ ER_ENDING4 = "ons"
 ER_ENDING5 = "ez"
 ER_ENDING6 = "ent"
 # Ending: -ir
-IR_ENDING1 = "s"
+IR_ENDING1 = "is"
 IR_ENDING2 = "s"
 IR_ENDING3 = "t"
 IR_ENDING4 = "ons"
@@ -54,7 +54,12 @@ if WordEnd == "er":
     print (PPN5 + space + WordStart +  ER_ENDING5)
     print (PPN6 + space + WordStart +  ER_ENDING6)
 elif WordEnd == "ir":
-    print("Support for these types will be added in 1.1")
+    print (PPN1 + space + WordStart +  IR_ENDING1)
+    print (PPN2 + space + WordStart +  IR_ENDING2)
+    print (PPN3 + space + WordStart +  IR_ENDING3)
+    print (PPN4 + space + WordStart +  IR_ENDING4)
+    print (PPN5 + space + WordStart +  IR_ENDING5)
+    print (PPN6 + space + WordStart +  IR_ENDING6)
 elif Word == "etre": 
     print()
     print("Je suis")
