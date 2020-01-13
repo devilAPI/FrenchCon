@@ -1,7 +1,7 @@
 ##############################
 #Please Enter Word
 ##############################
-print("Please enter your Word (Frensh only!)")
+print("Please enter your Word (French only!)")
 Word = input("Your Answer: ")
 print()
 print("You choosed " + Word + "!")
