@@ -1,4 +1,10 @@
 ##############################
+#imports
+##############################
+import webbrowser
+
+
+##############################
 #Please Enter Word
 ##############################
 print("Please enter your Word (French only!)")
@@ -27,7 +33,7 @@ ER_ENDING4 = "ons"
 ER_ENDING5 = "ez"
 ER_ENDING6 = "ent"
 # Ending: -ir
-IR_ENDING1 = "is"
+IR_ENDING1 = "s"
 IR_ENDING2 = "s"
 IR_ENDING3 = "t"
 IR_ENDING4 = "ons"
@@ -44,9 +50,9 @@ space = " "
 WordEnd = Word[-2:]
 WordStart = Word[:-2]
 
+
+
 if WordEnd == "er":
-    print(" Word: " + Word)
-    print()
     print (PPN1 + space + WordStart +  ER_ENDING1)
     print (PPN2 + space + WordStart +  ER_ENDING2)
     print (PPN3 + space + WordStart +  ER_ENDING3)
@@ -71,3 +77,14 @@ elif Word == "etre":
     print()
 else:
     print("Sorry, This Word is currently not supported :( Check on GitHub for Updates")
+    OpenGHUpdates = input("Do you want to open Github for update checking? (Y for YES; N for NO)")
+    if OpenGHUpdates == "Y":
+        print("Here You GO ;)")
+        webbrowser.open("https://github.com/devilAPI/FrenchCon/releases")
+    elif OpenGHUpdates == "N":
+        print("Abort")
+        exit(0)
+    else:
+        print("Sorry. Wrong Answer. (Y for YES; N for NO)")
+        print("Abort")
+        exit(0)
