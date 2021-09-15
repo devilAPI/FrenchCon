@@ -1,5 +1,5 @@
 # DISCONTINUED
-This project has been discontinued, alternatives are listed below:#
+This project has been discontinued, alternatives are listed below:
 
 https://conjugation.app/
 
